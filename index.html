@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal Shop — Digital tools for builders</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">Signal Shop</div>
+    <a href="#products" class="btn">Browse</a>
+  </header>
+
+  <section class="hero">
+    <h1>Digital tools that ship.</h1>
+    <p>Prompt packs, checklists, and setup guides for people building with AI. No fluff. Instant download.</p>
+    <a href="#products" class="btn primary">See today's products</a>
+  </section>
+
+  <section id="products" class="section">
+    <h2>Products</h2>
+    <div id="grid" class="grid"></div>
+  </section>
+
+  <section class="section narrow">
+    <h2>How it works</h2>
+    <ol>
+      <li>Pick a product.</li>
+      <li>Pay once with Stripe.</li>
+      <li>Download immediately.</li>
+    </ol>
+    <p class="note">The shop updates itself. You only change the config file.</p>
+  </section>
+
+  <section class="section narrow">
+    <h2>Questions</h2>
+    <details><summary>Is this a subscription?</summary><p>No. One-time purchases. Pay once, keep the file.</p></details>
+    <details><summary>How do I add my own products?</summary><p>Edit config.js, push, and the page updates.</p></details>
+    <details><summary>Do I need to run servers?</summary><p>No. This is a static site. Vercel hosts it for free.</p></details>
+  </section>
+
+  <footer>
+    <p>Signal Shop · Edit config.js only · Deploy to Vercel</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
